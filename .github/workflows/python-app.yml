@@ -32,5 +32,6 @@ jobs:
     - name: 'Deploy to Azure Web App'      
       uses: azure/webapps-deploy@v2      
       with:
-        app-name: '웹앱 이름' publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }} 
+        app-name: 'cdgithubaction14' 
+        publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }} 
         images: 'cwooni/flask:${{ github.sha }}'
