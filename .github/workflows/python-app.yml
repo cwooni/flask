@@ -24,7 +24,7 @@ jobs:
       uses: mr-smithers-excellent/docker-build-push@v5
       with:
         image: cwooni/flask
-        tags: v3, latest
+        tags: ${{ github.sha }}
         registry: docker.io
         username: cwooni
         password: dckr_pat_Xtpr5Rx-m7DXIZ4tDFwi-Gy-gl0
